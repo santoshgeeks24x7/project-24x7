@@ -1,7 +1,7 @@
 RewriteEngine On
 
-# Redirect all requests to the public directory
-RewriteRule ^(.*)$ public/$1 [L]
+RewriteRule ^$ public/ [L]
+RewriteRule (.*) public/$1 [L]
 
 # php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php81” package as the default “PHP” programming language.
